@@ -2,6 +2,6 @@
 builder = "NIXPACKS"
 
 [deploy]
-startCommand = "node src/server.js"
+startCommand = "node scripts/migrate.js && node src/server.js"
 healthcheckPath = "/api/v1/health"
 restartPolicyType = "ON_FAILURE"
